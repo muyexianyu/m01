@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dix练习</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+        box-sizing: border-box;
+      }
+      /* * {
+        border: 2px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .baise {
+        background-color: white;
+        box-shadow: 10px 6px 5px #957392;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 80px" class="baise mgr8"></div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div style="height: 60px" class="baise"></div>
+      <!--内容区-->
+      <div class="flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="flex column">
+          <!--数据区-->
+          <div class="flex">
+            <div style="height: 100px" class="flex1 baise mg8"></div>
+            <div style="height: 100px" class="flex1 baise mg8"></div>
+            <div style="height: 100px" class="flex1 baise mg8"></div>
+            <div style="height: 100px" class="flex1 baise mg8"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex column"></div>
+          <div style="height: 100px" class="baise mgt8"></div>
+          <div style="height: 100px" class="baise mgt8"></div>
+          <div style="height: 100px" class="baise mgt8"></div>
+          <div style="height: 100px" class="baise mgt8"></div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex mgr8 column">
+          <!--提示区-->
+          <div style="height: 100px" class="baise mg8"></div>
+          <!--消息区-->
+          <div style="height: 300px" class="baise mg8"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
